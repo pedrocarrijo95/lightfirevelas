@@ -40,6 +40,7 @@ p {
     padding-top: 50px; /* Espaçamento superior para os produtos */
 }
 
+
 /* Estilos dos produtos */
 .product {
     display: inline-block;
@@ -48,6 +49,9 @@ p {
     opacity: 0;
     transform: scale(0.8);
     transition: opacity 0.6s ease, transform 0.6s ease;
+    max-width: 20%;
+    height: 600px;
+    overflow: hidden; /* Ocultar o texto que excede a altura */
 }
 
 .product img {
@@ -59,6 +63,8 @@ p {
 .price {
     font-weight: bold;
     color: #574f4a; /* Cor do texto do preço */
+    position: absolute;
+    bottom: 30px;
 }
 
 .btn {
@@ -69,6 +75,8 @@ p {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease; /* Adicionando uma transição suave para a mudança de cor de fundo */
+    position: absolute;
+    bottom: 0;
 }
 
 .btn:hover {
