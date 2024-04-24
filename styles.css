@@ -135,7 +135,13 @@ p {
 
     .product img {
         width: 100%;
-        height: auto;
+        height: 50%;
+    }
+
+    .product img {
+        width: 250px; /* Tamanho fixo para as imagens do catálogo */
+        height: 250px; /* Altura fixa para manter as imagens quadradas */
+        object-fit: cover; /* Garantir que as imagens se ajustem dentro do contêiner */
     }
 
     .featured-img {
