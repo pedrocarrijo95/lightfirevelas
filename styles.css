@@ -1,0 +1,237 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease; /* Adicionando uma transição suave para a mudança de cor de fundo */
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f6f2; /* Cor de fundo suave */
+}
+
+/* Estilos específicos para cada seção */
+section {
+    text-align: center;
+    color: #363636; /* Cor do texto principal */
+}
+
+/* Estilo para o título de cada seção */
+section h2,
+p {
+    text-align: left; /* Alinhar o título à esquerda */
+    color: #574f4a; /* Cor do texto do título */
+}
+
+#home {
+    background-color: #ffffff; /* Cor de fundo branca para a seção inicial */
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+#home p {
+    text-align: center;
+    background-color: #ffffff;
+    color: #574f4a; /* Cor do texto */
+}
+
+/* Estilos da seção de produtos */
+#produtos {
+    text-align: left;
+    padding-top: 50px; /* Espaçamento superior para os produtos */
+}
+
+/* Estilos dos produtos */
+.product {
+    display: inline-block;
+    margin: 20px; /* Espaçamento entre os produtos */
+    text-align: left;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.product img {
+    width: 250px; /* Tamanho fixo para as imagens do catálogo */
+    height: 250px; /* Altura fixa para manter as imagens quadradas */
+    object-fit: cover; /* Garantir que as imagens se ajustem dentro do contêiner */
+}
+
+.price {
+    font-weight: bold;
+    color: #574f4a; /* Cor do texto do preço */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b59065; /* Cor de fundo do botão */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Adicionando uma transição suave para a mudança de cor de fundo */
+}
+
+.btn:hover {
+    background-color: #8c6f4b; /* Cor de fundo do botão ao passar o mouse */
+}
+
+#contato {
+    text-align: left;
+}
+
+#sobre {
+    text-align: left;
+}
+
+.featured-img {
+    width: 100vw; /* Largura da imagem ocupando 100% da largura da tela */
+    max-height: 900px; /* Altura automática para manter a proporção da imagem */
+    object-fit: cover; /* Garantir que a imagem cubra toda a área da seção */
+    max-width: none; /* Remover qualquer limite máximo de largura */
+}
+
+.sobre-image img {
+    max-width: 500px;
+    height: auto;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar {
+        text-align: center; /* Centralizar os botões do menu */
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .product {
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+
+    .product img {
+        width: 100%;
+        height: auto;
+    }
+
+    .featured-img {
+        width: 100vw; /* Largura da imagem ocupando 100% da largura da tela */
+        height: auto; /* Altura automática para manter a proporção da imagem */
+        object-fit: cover; /* Garantir que a imagem cubra toda a área da seção */
+        max-width: none; /* Remover qualquer limite máximo de largura */
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .sobre-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adicionando margem superior à seção de destaque para afastá-la da barra de navegação */
+    #home {
+        margin-top: 200px; /* Ajuste conforme necessário para acomodar a altura da barra de navegação */
+    }
+
+}
+
+@media (max-width: 480px) {
+    .navbar a {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+/* Animação de entrada para os produtos quando entram na visualização */
+.animate {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Animação de entrada suave para o botão "Comprar Agora" */
+#home .btn {
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adicionando uma transição suave para a mudança de cor de fundo e escala */
+}
+
+#home .btn:hover {
+    background-color: #8c6f4b; /* Mudança de cor de fundo do botão ao passar o mouse */
+    transform: scale(1.1); /* Efeito de escala ao passar o mouse */
+}
+
+/* Estilos da barra de navegação */
+.navbar {
+    background-color: #574f4a; /* Cor de fundo da barra de navegação */
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar li:last-child {
+    margin-right: 0;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.navbar a:hover {
+    background-color: #433c38; /* Cor de fundo do link da barra de navegação ao passar o mouse */
+}
+
+.container {
+    margin: 0 auto; /* Centralizar container */
+    max-width: 1300px; /* Definir largura máxima do container */
+}
+
+#container_home {
+    margin: 0 auto; /* Centralizar container */
+    max-width: none; /* Definir largura máxima do container */
+}
+
+
