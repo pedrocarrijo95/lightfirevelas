@@ -89,6 +89,14 @@ p {
     transition: background-color 0.3s ease; /* Adicionando uma transição suave para a mudança de cor de fundo */
 }
 
+.btn img {
+    width: 30px; /* Largura desejada */
+    height: 30px; /* Altura desejada */
+    margin-right: 5px; /* Espaçamento entre a imagem e o texto */
+    vertical-align: middle; /* Alinhar verticalmente a imagem */
+}
+
+
 .btn:hover {
     background-color: #8c6f4b; /* Cor de fundo do botão ao passar o mouse */
 }
