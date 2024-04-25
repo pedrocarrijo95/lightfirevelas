@@ -39,6 +39,7 @@
 </head>
 <body>
     <nav class="navbar">
+        <span class="menu">&#9776;</span> 
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#produtos">Produtos</a></li>
@@ -47,6 +48,17 @@
             <br>
         </ul>
     </nav>
+    <script>
+        //JavaScript para mostrar/ocultar o menu responsivo
+        const menuIcon = document.querySelector('.menu');
+        const navbarList = document.querySelector('.navbar ul');
+
+        menuIcon.addEventListener('click', () => {
+            navbarList.classList.toggle('active');
+        });
+    </script>
+
+
     <!-- Página Inicial -->
     <section id="home">
         <div class="container" id="container_home">
