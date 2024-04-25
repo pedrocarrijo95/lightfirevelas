@@ -35,10 +35,6 @@
             return false;
         }
 
-        document.getElementById('link_comprar').addEventListener('click', function() {
-            // Chame o método desejado aqui
-            gtagSendEvent("https://wa.me/message/LUCI7E7ESSUYL1");
-        });
     </script>
 </head>
 <body>
@@ -71,7 +67,7 @@
                 <p>A vela de Morango com Chantilly oferece uma experiência emocionante, despertando prazer e conforto com sua fragrância única. 
                     <br><br>Seu design em vidro marmorizado rosa adiciona um toque de moda à decoração, tornando cada momento especial.</p>
                 <p class="price">R$44,90</p>
-                <a href="https://wa.me/message/LUCI7E7ESSUYL1" class="btn_comprar" id="link_comprar" target="_blank">Comprar</a>
+                <a onclick="return gtagSendEvent('https://wa.me/message/LUCI7E7ESSUYL1');" href="https://wa.me/message/LUCI7E7ESSUYL1"  class="btn_comprar" id="link_comprar" target="_blank">Comprar</a>
             </div>
             <div class="product">
                 <img src="outono.jpg" alt="Outono">
@@ -79,7 +75,7 @@
                 <p>O aroma de cereja e avelã proporciona conforto, bem-estar e alegria, criando uma atmosfera acolhedora e relaxante. 
                     <br><br>Sua fragrância envolvente estimula os sentidos, promovendo momentos de prazer e descontração. Ideal para momentos de relaxamento e tranquilidade.</p>
                 <p class="price">R$44,90</p>
-                <a href="https://wa.me/message/LUCI7E7ESSUYL1" id="link_comprar" class="btn_comprar">Comprar</a>
+                <a onclick="return gtagSendEvent('https://wa.me/message/LUCI7E7ESSUYL1');" href="https://wa.me/message/LUCI7E7ESSUYL1" id="link_comprar" class="btn_comprar">Comprar</a>
             </div>
             <div class="product">
                 <img src="inverno.jpg" alt="Inverno">
@@ -87,7 +83,7 @@
                 <p>O aroma de baunilha oferece um abraço reconfortante, aliviando o estresse e a ansiedade, enquanto proporciona conforto e relaxamento. 
                     <br><br>A vela em tons de prata adiciona elegância, guiando para um estado de serenidade e bem-estar.</p>
                 <p class="price">R$44,90</p>
-                <a href="https://wa.me/message/LUCI7E7ESSUYL1" id="link_comprar" class="btn_comprar">Comprar</a>
+                <a onclick="return gtagSendEvent('https://wa.me/message/LUCI7E7ESSUYL1');" href="https://wa.me/message/LUCI7E7ESSUYL1" id="link_comprar" class="btn_comprar">Comprar</a>
             </div>
             <div class="product">
                 <img src="canela.jpg" alt="Canela">
@@ -95,7 +91,7 @@
                 <p>O aroma de canela não apenas melhora a concentração, mas também diminui o estresse, induzindo um estado de espírito positivo. 
                     <br><br>Nossa vela, com pedaços de casca de canela, proporciona uma experiência revitalizante e confortante, como um abraço em meio à agitação do cotidiano.</p>
                 <p class="price">R$44,90</p>
-                <a href="https://wa.me/message/LUCI7E7ESSUYL1" id="link_comprar" class="btn_comprar">Comprar</a>
+                <a onclick="return gtagSendEvent('https://wa.me/message/LUCI7E7ESSUYL1');" href="https://wa.me/message/LUCI7E7ESSUYL1" id="link_comprar" class="btn_comprar">Comprar</a>
             </div>
         </div>
     </section>
@@ -120,7 +116,7 @@
         <div class="container">
             <h2>Contate-nos</h2>
             <p>Entre em contato conosco para perguntas, comentários ou pedidos personalizados.</p>
-            <a href="https://wa.me/message/LUCI7E7ESSUYL1" class="btn">
+            <a href="https://wa.me/message/LUCI7E7ESSUYL1" onclick="return gtagSendEvent('https://wa.me/message/LUCI7E7ESSUYL1');" class="btn">
                 <img src="./whatsapp.webp" alt="WhatsApp">
                 Enviar Mensagem
             </a>            
